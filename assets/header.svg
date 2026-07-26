@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 240" width="930" height="240" role="img" aria-label="Nasr Eddine Sangai — AI Systems Architect. AI systems that reason and act, not just chat.">
+  <defs>
+    <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-320" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#a8813b"/>
+      <stop offset="0.48" stop-color="#f6e6bd"/>
+      <stop offset="1" stop-color="#cba85c"/>
+      <animate attributeName="x1" values="-340;930" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1270" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c9a24e" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#9a7c3c" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#2f8f64" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-160%" y="-160%" width="420%" height="420%">
+      <feGaussianBlur stdDeviation="3.4"/>
+    </filter>
+    <filter id="softer" x="-160%" y="-160%" width="420%" height="420%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: "Segoe UI", Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace; }
+    .serif { font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; }
+
+    .in { opacity: 0; transform: translateY(12px); animation: rise .9s cubic-bezier(.16,1,.3,1) forwards; }
+    .d1 { animation-delay: .15s } .d2 { animation-delay: .30s } .d3 { animation-delay: .45s }
+    .d4 { animation-delay: .60s } .d5 { animation-delay: .75s }
+    @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+    .rule { transform: scaleX(0); transform-origin: 48px 137px; animation: draw 1.1s .55s cubic-bezier(.16,1,.3,1) forwards; }
+    @keyframes draw { to { transform: scaleX(1); } }
+
+    .fieldFade { opacity: 0; animation: fadeIn 1.6s .35s ease-out forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .fieldDrift { transform-origin: 772px 122px; animation: drift 26s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: rotate(-1.7deg) scale(.985); } to { transform: rotate(1.7deg) scale(1.015); } }
+
+    .halo { animation: breathe 9s ease-in-out infinite alternate; }
+    @keyframes breathe { from { opacity: .55; } to { opacity: 1; } }
+
+    .n { animation: tw 3.6s ease-in-out infinite alternate; }
+    .t1 { animation-delay: -.4s } .t2 { animation-delay: -1.1s } .t3 { animation-delay: -1.9s }
+    .t4 { animation-delay: -2.6s } .t5 { animation-delay: -3.2s }
+    @keyframes tw { from { opacity: .35; } to { opacity: 1; } }
+
+    .live { animation: live 2.4s ease-in-out infinite; transform-origin: 308px 58px; }
+    @keyframes live { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.72); } }
+    .liveRing { animation: ripple 2.4s ease-out infinite; transform-origin: 308px 58px; }
+    @keyframes ripple { 0% { opacity: .6; transform: scale(.6); } 100% { opacity: 0; transform: scale(2.6); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .in, .rule, .fieldFade { opacity: 1; transform: none; animation: none; }
+      .fieldDrift, .halo, .n, .live, .liveRing { animation: none; }
+    }
+  </style>
+
+  <rect x="0.5" y="0.5" width="929" height="239" rx="16" fill="#0b0a09" stroke="#f3efe6" stroke-opacity="0.09"/>
+
+  <!-- neural field -->
+  <g class="fieldFade">
+    <ellipse class="halo" cx="772" cy="122" rx="168" ry="140" fill="url(#halo)"/>
+    <g class="fieldDrift">
+      <g stroke="#c9a24e" stroke-opacity="0.2" stroke-width="0.9" fill="none">
+        <path d="M700 52 L776 40 L846 64 L886 118 L866 178 L798 202 L724 190 L664 150 L652 90 Z"/>
+        <path d="M700 52 L748 92 M776 40 L748 92 M846 64 L812 104 M886 118 L812 104 M866 178 L826 152 M798 202 L762 166 M724 190 L762 166 M664 150 L712 128 M652 90 L712 128"/>
+        <path d="M748 92 L772 128 M812 104 L772 128 M826 152 L772 128 M762 166 L772 128 M712 128 L772 128"/>
+        <path d="M748 92 L812 104 L826 152 L762 166 L712 128 Z" stroke-opacity="0.13"/>
+      </g>
+      <g fill="#c9a24e">
+        <circle class="n t1" cx="700" cy="52" r="2.4"/>
+        <circle class="n t3" cx="776" cy="40" r="2.1"/>
+        <circle class="n t2" cx="846" cy="64" r="2.4"/>
+        <circle class="n t5" cx="886" cy="118" r="2.1"/>
+        <circle class="n t4" cx="866" cy="178" r="2.4"/>
+        <circle class="n t1" cx="798" cy="202" r="2.1"/>
+        <circle class="n t3" cx="724" cy="190" r="2.4"/>
+        <circle class="n t5" cx="664" cy="150" r="2.1"/>
+        <circle class="n t2" cx="652" cy="90" r="2.4"/>
+        <circle class="n t4" cx="748" cy="92" r="2.8"/>
+        <circle class="n t2" cx="812" cy="104" r="2.8"/>
+        <circle class="n t5" cx="826" cy="152" r="2.6"/>
+        <circle class="n t3" cx="762" cy="166" r="2.6"/>
+        <circle class="n t1" cx="712" cy="128" r="2.6"/>
+      </g>
+      <circle cx="772" cy="128" r="4" fill="#f1dca2"/>
+      <circle cx="772" cy="128" r="7" fill="#c9a24e" opacity="0.3" filter="url(#soft)"/>
+
+      <!-- travelling signal -->
+      <circle r="2.8" fill="#f6e6bd" filter="url(#soft)">
+        <animateMotion dur="4.6s" repeatCount="indefinite" path="M652 90 L700 52 L748 92 L772 128"/>
+      </circle>
+      <circle r="2.4" fill="#3aa370" filter="url(#soft)">
+        <animateMotion dur="5.8s" begin="1.2s" repeatCount="indefinite" path="M886 118 L812 104 L772 128 L762 166 L798 202"/>
+      </circle>
+      <circle r="2.6" fill="#f6e6bd" filter="url(#soft)">
+        <animateMotion dur="6.7s" begin="2.4s" repeatCount="indefinite" path="M724 190 L762 166 L772 128 L712 128 L664 150"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- eyebrow -->
+  <g class="in d1">
+    <text class="mono" x="48" y="62" font-size="10.5" letter-spacing="3.6" fill="#a79f90">AI SYSTEMS ARCHITECT</text>
+    <line x1="264" y1="58" x2="294" y2="58" stroke="#f3efe6" stroke-opacity="0.16"/>
+    <circle class="liveRing" cx="308" cy="58" r="3" fill="#3aa370"/>
+    <circle class="live" cx="308" cy="58" r="3" fill="#3aa370"/>
+    <text class="mono" x="320" y="62" font-size="10.5" letter-spacing="2.4" fill="#3aa370">AVAILABLE FOR CONTRACT / FTE</text>
+  </g>
+
+  <!-- name -->
+  <text class="in d2" x="48" y="118" font-size="44" font-weight="700" letter-spacing="-0.8" fill="#f3efe6">Nasr Eddine Sangai</text>
+
+  <!-- rule -->
+  <rect class="rule" x="48" y="136" width="300" height="2" rx="1" fill="url(#sheen)"/>
+
+  <!-- statement -->
+  <text class="in d3" x="48" y="176" font-size="22" fill="#a79f90">AI systems that <tspan class="serif" font-size="24" fill="url(#sheen)">Reason</tspan> and <tspan class="serif" font-size="24" fill="url(#sheen)">Act</tspan> — not just chat.</text>
+
+  <!-- subline -->
+  <text class="in d4" x="48" y="206" font-size="12.5" fill="#726a5c">Agents · retrieval · LLM platforms — designed to be operated, not demoed.</text>
+</svg>

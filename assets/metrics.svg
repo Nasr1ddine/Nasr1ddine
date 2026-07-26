@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 190" width="930" height="190" role="img" aria-label="Measured results: macro nDCG at 10 of 0.560 from a 208-config BEIR sweep; 100 percent of citations resolved across 24 claims; injection recall at or above 85 percent as a CI gate; 52 independent domains out of 61 sources in one research run.">
+  <defs>
+    <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#a8813b"/>
+      <stop offset="0.5" stop-color="#f6e6bd"/>
+      <stop offset="1" stop-color="#cba85c"/>
+      <animate attributeName="x1" values="-300;930" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1230" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="pool" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c9a24e" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#c9a24e" stop-opacity="0"/>
+    </radialGradient>
+    <g id="bezel" fill="none" stroke="#f3efe6" stroke-opacity="0.13" stroke-width="1">
+      <path d="M42 0 L46 0 M36.37 21 L39.84 23 M21 36.37 L23 39.84 M0 42 L0 46
+               M-21 36.37 L-23 39.84 M-36.37 21 L-39.84 23 M-42 0 L-46 0
+               M-36.37 -21 L-39.84 -23 M-21 -36.37 L-23 -39.84 M0 -42 L0 -46
+               M21 -36.37 L23 -39.84 M36.37 -21 L39.84 -23"/>
+    </g>
+  </defs>
+
+  <style>
+    text { font-family: "Segoe UI", Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace; }
+
+    .arc { stroke-dasharray: 213.63; stroke-dashoffset: 213.63; stroke-linecap: round; }
+    .a1 { animation: s1 1.8s .35s cubic-bezier(.16,1,.3,1) forwards }
+    .a2 { animation: s2 1.8s .50s cubic-bezier(.16,1,.3,1) forwards }
+    .a3 { animation: s3 1.8s .65s cubic-bezier(.16,1,.3,1) forwards }
+    .a4 { animation: s4 1.8s .80s cubic-bezier(.16,1,.3,1) forwards }
+    @keyframes s1 { to { stroke-dashoffset: 94.00 } }   /* 0.560 */
+    @keyframes s2 { to { stroke-dashoffset: 0 } }        /* 100 %  */
+    @keyframes s3 { to { stroke-dashoffset: 32.04 } }    /* 85 %   */
+    @keyframes s4 { to { stroke-dashoffset: 31.51 } }    /* 52/61  */
+
+    .in { opacity: 0; transform: translateY(8px); animation: rise .8s cubic-bezier(.16,1,.3,1) forwards }
+    @keyframes rise { to { opacity: 1; transform: translateY(0) } }
+    .p1 { animation-delay: .35s } .p2 { animation-delay: .5s } .p3 { animation-delay: .65s } .p4 { animation-delay: .8s }
+
+    .val { opacity: 0; animation: fadeIn .7s forwards }
+    @keyframes fadeIn { to { opacity: 1 } }
+    .v1 { animation-delay: 1.15s } .v2 { animation-delay: 1.3s } .v3 { animation-delay: 1.45s } .v4 { animation-delay: 1.6s }
+
+    .pool { animation: breathe 7s ease-in-out infinite alternate }
+    .q2 { animation-delay: -1.7s } .q3 { animation-delay: -3.4s } .q4 { animation-delay: -5.1s }
+    @keyframes breathe { from { opacity: .45 } to { opacity: 1 } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .a1 { stroke-dashoffset: 94 } .a2 { stroke-dashoffset: 0 }
+      .a3 { stroke-dashoffset: 32.04 } .a4 { stroke-dashoffset: 31.51 }
+      .arc, .in, .val, .pool { animation: none; opacity: 1; transform: none }
+    }
+  </style>
+
+  <rect x="0.5" y="0.5" width="929" height="189" rx="16" fill="#0b0a09" stroke="#f3efe6" stroke-opacity="0.09"/>
+
+  <text class="mono" x="24" y="26" font-size="9.5" letter-spacing="2.6" fill="#726a5c">MEASURED, NOT CLAIMED — EVERY FIGURE COMES FROM A RUN OR A CI GATE</text>
+  <text class="mono" x="906" y="26" font-size="9" letter-spacing="1.4" fill="#55503f" text-anchor="end">FIVE SHIPPED SYSTEMS</text>
+
+  <!-- 01 -->
+  <g class="in p1">
+    <ellipse class="pool" cx="126" cy="82" rx="66" ry="60" fill="url(#pool)"/>
+    <use href="#bezel" x="126" y="82"/>
+    <circle cx="126" cy="82" r="34" fill="none" stroke="#f3efe6" stroke-opacity="0.07" stroke-width="7"/>
+    <circle class="arc a1" cx="126" cy="82" r="34" fill="none" stroke="url(#sweep)" stroke-width="7" transform="rotate(-90 126 82)"/>
+    <text class="val v1" x="126" y="88" font-size="18" font-weight="700" fill="#f3efe6" text-anchor="middle">0.560</text>
+    <text x="126" y="142" font-size="12" font-weight="600" fill="#f3efe6" text-anchor="middle">Macro nDCG@10</text>
+    <text class="mono" x="126" y="160" font-size="9.5" fill="#726a5c" text-anchor="middle">208-config BEIR sweep</text>
+  </g>
+
+  <!-- 02 -->
+  <g class="in p2">
+    <ellipse class="pool q2" cx="352" cy="82" rx="66" ry="60" fill="url(#pool)"/>
+    <use href="#bezel" x="352" y="82"/>
+    <circle cx="352" cy="82" r="34" fill="none" stroke="#f3efe6" stroke-opacity="0.07" stroke-width="7"/>
+    <circle class="arc a2" cx="352" cy="82" r="34" fill="none" stroke="url(#sweep)" stroke-width="7" transform="rotate(-90 352 82)"/>
+    <text class="val v2" x="352" y="88" font-size="18" font-weight="700" fill="#f3efe6" text-anchor="middle">100 %</text>
+    <text x="352" y="142" font-size="12" font-weight="600" fill="#f3efe6" text-anchor="middle">Citations resolved</text>
+    <text class="mono" x="352" y="160" font-size="9.5" fill="#726a5c" text-anchor="middle">24 claims · 0 hallucinated</text>
+  </g>
+
+  <!-- 03 -->
+  <g class="in p3">
+    <ellipse class="pool q3" cx="578" cy="82" rx="66" ry="60" fill="url(#pool)"/>
+    <use href="#bezel" x="578" y="82"/>
+    <circle cx="578" cy="82" r="34" fill="none" stroke="#f3efe6" stroke-opacity="0.07" stroke-width="7"/>
+    <circle class="arc a3" cx="578" cy="82" r="34" fill="none" stroke="url(#sweep)" stroke-width="7" transform="rotate(-90 578 82)"/>
+    <text class="val v3" x="578" y="88" font-size="18" font-weight="700" fill="#f3efe6" text-anchor="middle">≥ 85 %</text>
+    <text x="578" y="142" font-size="12" font-weight="600" fill="#f3efe6" text-anchor="middle">Injection recall</text>
+    <text class="mono" x="578" y="160" font-size="9.5" fill="#726a5c" text-anchor="middle">CI gate · ≤ 5 % false positives</text>
+  </g>
+
+  <!-- 04 -->
+  <g class="in p4">
+    <ellipse class="pool q4" cx="804" cy="82" rx="66" ry="60" fill="url(#pool)"/>
+    <use href="#bezel" x="804" y="82"/>
+    <circle cx="804" cy="82" r="34" fill="none" stroke="#f3efe6" stroke-opacity="0.07" stroke-width="7"/>
+    <circle class="arc a4" cx="804" cy="82" r="34" fill="none" stroke="url(#sweep)" stroke-width="7" transform="rotate(-90 804 82)"/>
+    <text class="val v4" x="804" y="88" font-size="18" font-weight="700" fill="#f3efe6" text-anchor="middle">52</text>
+    <text x="804" y="142" font-size="12" font-weight="600" fill="#f3efe6" text-anchor="middle">Independent domains</text>
+    <text class="mono" x="804" y="160" font-size="9.5" fill="#726a5c" text-anchor="middle">of 61 sources · one run</text>
+  </g>
+</svg>
